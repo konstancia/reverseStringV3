@@ -14,6 +14,13 @@ public class Program
 
         Console.WriteLine($"You have entered: {word}");
 
+        int wordLength = word.Length;
+        Console.WriteLine($"Your word contains {wordLength} characters");
+
+        for (int i = wordLength- 1; i >= 0; i--)
+            Console.WriteLine($"Your word backwards is {word[i]}");
+
+
 
     }
 }
