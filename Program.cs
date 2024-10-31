@@ -24,17 +24,14 @@ public class Program
         
         Console.WriteLine($"Your word contains {wordLength} characters");
 
-        for (int i = wordLength- 1; i >= 0; i--)
+        for (int i = wordLength - 1; i >= 0; i--)
+        {
             Console.WriteLine($"Your word backwards is {word[i]}");
 
             string reverseString = $"{word}";
-            Console.WriteLine(reverseString[3]);
-            Console.WriteLine(reverseString[2]);
-            Console.WriteLine(reverseString[1]);
-            Console.WriteLine(reverseString[0]);
-
+        }
         
-            {
+        {
                 //0 -> 3
                 //1 -> 2
                 //2 - > 1
