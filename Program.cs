@@ -20,7 +20,7 @@ public class Program
         // i=1 => e
         // i = 2 => s
         // i=3 => t
-        // i=4 -> 
+        // i=4 ->
         
         Console.WriteLine($"Your word contains {wordLength} characters");
 
