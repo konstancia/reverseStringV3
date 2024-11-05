@@ -24,9 +24,9 @@ public class Program
         
         Console.WriteLine($"Your word contains {wordLength} characters");
 
-        for (int i = wordLength - 1; i >= 0; i++)
+        for (int i= 0; i <= wordLength; i++)
         {
-            string reverseString = $"{word+=i}";
+            string reverseString = word + i;
             Console.WriteLine(reverseString);
             
             //Console.WriteLine($"Your word backwards is {word[i]}");
