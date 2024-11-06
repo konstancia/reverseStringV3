@@ -15,19 +15,15 @@ public class Program
         Console.WriteLine($"You have entered: {word}");
 
         int wordLength = word.Length;
-        // wordLength = 4; "test"
-        //i=0 -> t
-        // i=1 => e
-        // i = 2 => s
-        // i=3 => t
-        // i=4 ->
+        string reverseString = "";
+        
         
         Console.WriteLine($"Your word contains {wordLength} characters");
 
         for (int i= 0; i <= wordLength; i++)
         {
-            string reverseString = word + i;
-            Console.WriteLine(reverseString);
+            //string reverseString += word[i];
+            Console.WriteLine(reverseString += word[i]);
             
             //Console.WriteLine($"Your word backwards is {word[i]}");
         }
@@ -41,6 +37,13 @@ public class Program
                 //reverseString = reverseString + e
                 
                 //Console.WriteLine($"Your word backwards is {word[i]}");
+                
+                // wordLength = 4; "test"
+                //i=0 -> t
+                // i=1 => e
+                // i = 2 => s
+                // i=3 => t
+                // i=4 ->
             }
             
 
