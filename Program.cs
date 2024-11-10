@@ -15,39 +15,33 @@ public class Program
         Console.WriteLine($"You have entered: {word}");
 
         int wordLength = word.Length;
-        string reverseString = "";
-        
-        
         Console.WriteLine($"Your word contains {wordLength} characters");
+        
+        string reverseString = "";
+        string reverseStringV2 = "";
 
-        for (int i= 0; i <= wordLength; i++)
+        for (int i = 0; i < wordLength; i++)
         {
             //string reverseString += word[i];
-            Console.WriteLine(reverseString += word[i]);
+            reverseString += word[wordLength-1-i];
+            // reverseString = reverseString + word[wordLength-1-i];
+            // Console.WriteLine();
             
             //Console.WriteLine($"Your word backwards is {word[i]}");
         }
-        
+
+        for (int i = wordLength-1; i <= 0; i--)
         {
-                //0 -> 3
-                //1 -> 2
-                //2 - > 1
-                //3 -> 0
-                //reverseString = t
-                //reverseString = reverseString + e
-                
-                //Console.WriteLine($"Your word backwards is {word[i]}");
-                
-                // wordLength = 4; "test"
-                //i=0 -> t
-                // i=1 => e
-                // i = 2 => s
-                // i=3 => t
-                // i=4 ->
-            }
-            
+            reverseStringV2 += wordLength-1-i;
+        }
 
+        
+        Console.WriteLine(reverseString);
+        Console.WriteLine($"abc{reverseStringV2}");
+        
+            //word[50-49] == word[1]
 
+//wordLengt-1-i
 
 
 
