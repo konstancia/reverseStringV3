@@ -30,7 +30,7 @@ public class Program
             //Console.WriteLine($"Your word backwards is {word[i]}");
         }
 
-        for (int i = wordLength-1; i <= 0; i--)
+        for (int i = wordLength-1; i <= wordLength; i--)
         {
             reverseStringV2 += wordLength-1-i;
         }
