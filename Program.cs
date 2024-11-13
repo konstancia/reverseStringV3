@@ -30,14 +30,14 @@ public class Program
             //Console.WriteLine($"Your word backwards is {word[i]}");
         }
 
-        for (int i = wordLength-1; i <= wordLength; i--)
+        for (int i = wordLength; i <= 3; i--)
         {
-            reverseStringV2 += wordLength-1-i;
+            reverseStringV2 += wordLength+1+i;
         }
 
         
         Console.WriteLine(reverseString);
-        Console.WriteLine($"abc{reverseStringV2}");
+        Console.WriteLine(reverseStringV2);
         
             //word[50-49] == word[1]
 
