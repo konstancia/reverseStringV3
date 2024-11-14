@@ -30,9 +30,9 @@ public class Program
             //Console.WriteLine($"Your word backwards is {word[i]}");
         }
 
-        for (int i = wordLength; i <= 3; i--)
+        for (int i = wordLength; i < 0; i--)
         {
-            reverseStringV2 += wordLength+1+i;
+            reverseStringV2 += word[wordLength];
         }
 
         
