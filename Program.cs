@@ -30,14 +30,23 @@ public class Program
             //Console.WriteLine($"Your word backwards is {word[i]}");
         }
 
-        for (int i = wordLength; i < 0; i--)
+        for (int i = 0; i < wordLength; i++)
         {
-            reverseStringV2 += word[wordLength];
+            reverseStringV2 += word[i];
         }
 
         
         Console.WriteLine(reverseString);
         Console.WriteLine(reverseStringV2);
+
+        if (reverseString == reverseStringV2)
+        {
+            Console.WriteLine("Your workd is a palindrome");
+        }
+        else
+        {
+            Console.WriteLine("Your word is not a palindrome");
+        }
         
             //word[50-49] == word[1]
 
