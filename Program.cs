@@ -18,8 +18,7 @@ public class Program
         Console.WriteLine($"Your word contains {wordLength} characters");
         
         string reverseString = "";
-        string reverseStringV2 = "";
-
+        
         for (int i = 0; i < wordLength; i++)
         {
             reverseString += word[wordLength-1-i];
