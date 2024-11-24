@@ -3,7 +3,7 @@
 public class Program
 {
     static void Main(string[] args)
-    {
+        {
 
 
         Console.WriteLine("Hello, This program will reserve a string.");
@@ -22,37 +22,19 @@ public class Program
 
         for (int i = 0; i < wordLength; i++)
         {
-            //string reverseString += word[i];
             reverseString += word[wordLength-1-i];
-            // reverseString = reverseString + word[wordLength-1-i];
-            // Console.WriteLine();
-            
-            //Console.WriteLine($"Your word backwards is {word[i]}");
         }
-
-        for (int i = 0; i < wordLength; i++)
-        {
-            reverseStringV2 += word[i];
-        }
-
         
         Console.WriteLine(reverseString);
-        Console.WriteLine(reverseStringV2);
+        Console.WriteLine(word);
 
-        if (reverseString == reverseStringV2)
+        if (reverseString == word)
         {
-            Console.WriteLine("Your workd is a palindrome");
+            Console.WriteLine("Your word is a palindrome");
         }
         else
         {
             Console.WriteLine("Your word is not a palindrome");
         }
-        
-            //word[50-49] == word[1]
-
-//wordLengt-1-i
-
-
-
-    }
+        }
 }
